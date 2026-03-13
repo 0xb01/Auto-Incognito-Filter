@@ -1,5 +1,9 @@
 # Auto Incognito Filter
 
+<p align="center">
+  <img src="https://github.com/0xb01/Auto-Incognito-Filter/blob/master/ui.png" alt="App UI" />
+</p>
+
 A simple Chrome/Edge extension that automatically opens pages in Incognito Mode when it spots certain keywords you care about.
 
 ## What Does It Do?
