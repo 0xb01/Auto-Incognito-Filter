@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Incognito Filter",
+  "version": "1.0",
+  "description": "Automatically opens specified websites in incognito mode.",
+  "permissions": [
+    "storage",
+    "webNavigation",
+    "tabs",
+    "favicon",
+    "contextMenus",
+    "scripting",
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "48": "icon_48.png",
+    "128": "icon_128.png",
+    "256": "icon_256.png",
+    "512": "icon_512.png"
+  }
+}

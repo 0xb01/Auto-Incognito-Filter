@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Auto Incognito Filter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header id="mainHeader">
+      <div class="header-top">
+        <h3>Auto Incognito<span class="cursor"></span></h3>
+        <button id="helpBtn" class="utility-link">Help</button>
+      </div>
+      <div class="status-wrapper">
+        <span class="status-dot"></span>
+        <span id="instructionText" class="system-ready"></span>
+      </div>
+    </header>
+
+    <div id="helpSection" class="help-section hidden">
+      <h4>How to use</h4>
+      <ul>
+        <li><strong>Standard:</strong> Matches if the website address contains your text (e.g., <code>google.com</code>).</li>
+        <li><strong>Wildcard:</strong> Use <code>*</code> to match any characters (e.g., <code>*.google.com</code> or <code>google.*</code>).</li>
+        <li><strong>On/Off:</strong> Use the power icon to enable or disable a specific website.</li>
+      </ul>
+      <div class="credits">CREATED BY 0xb01</div>
+    </div>
+    
+    <div class="input-area">
+      <div class="input-wrapper">
+        <input type="text" id="domainInput" placeholder="Enter website (e.g. google.com)" autocomplete="off">
+        <button id="addBtn" title="Add to list">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+      </div>
+      <button id="addCurrentBtn" class="utility-link">Add current website</button>
+    </div>
+
+    <div class="global-toggle-area">
+      <span class="toggle-label" id="globalToggleLabel">Auto Incognito Enabled</span>
+      <label class="switch">
+        <input type="checkbox" id="globalToggle" checked>
+        <span class="slider round"></span>
+      </label>
+    </div>
+    
+    <div class="list-container">
+      <ul id="domainList"></ul>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
